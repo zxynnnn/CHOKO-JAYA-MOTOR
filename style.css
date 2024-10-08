@@ -43,27 +43,27 @@ header {
     background: linear-gradient(135deg, rgba(26, 35, 126, 0.95), rgba(100, 181, 246, 0.95));
     color: var(--white);
     text-align: center;
-    padding: 3rem 0;
+    padding: 2rem 1rem;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
 .logo {
-    max-width: 200px;
-    margin-bottom: 1.5rem;
+    max-width: 150px;
+    margin-bottom: 1rem;
     border-radius: 50%;
-    border: 5px solid var(--white);
+    border: 3px solid var(--white);
     transition: transform 0.3s ease;
     animation: pulse 2s infinite;
 }
 
 .logo:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /* Navigasi */
 nav {
     background-color: rgba(40, 53, 147, 0.95);
-    padding: 1.2rem 0;
+    padding: 0.8rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -80,7 +80,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0.7rem;
+    margin: 0.5rem;
 }
 
 nav ul li a {
@@ -88,9 +88,10 @@ nav ul li a {
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
-    padding: 0.7rem 1.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 25px;
     display: block;
+    font-size: 0.9rem;
 }
 
 nav ul li a:hover {
@@ -102,12 +103,12 @@ nav ul li a:hover {
 
 /* Konten utama */
 main {
-    padding: 5rem 2rem;
-    max-width: 1300px;
-    margin: 2rem auto;
+    padding: 2rem 1rem;
+    max-width: 100%;
+    margin: 1rem auto;
     background-color: rgba(255, 255, 255, 0.97);
-    border-radius: 20px;
-    box-shadow: 0 0 40px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
 /* Hero section */
@@ -115,16 +116,16 @@ main {
     background-image: url('2018-09-09.jpg');
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--white);
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     position: relative;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .hero::before {
@@ -140,17 +141,17 @@ main {
 
 .hero-content {
     background-color: rgba(255, 255, 255, 0.97);
-    padding: 3rem;
-    border-radius: 20px;
-    box-shadow: 0 0 40px rgba(0,0,0,0.4);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
     z-index: 2;
     animation: slideIn 1.5s ease-out;
 }
 
 .hero-content h2 {
     color: var(--primary-color);
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
@@ -159,28 +160,28 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .service {
     flex-basis: 100%;
     background-color: var(--white);
-    padding: 2.5rem;
-    margin-bottom: 2.5rem;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    border-radius: 20px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    border-radius: 10px;
     transition: all 0.4s ease;
 }
 
 .service:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 20px 40px rgba(26, 35, 126, 0.4);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(26, 35, 126, 0.4);
 }
 
 .service h3 {
     color: var(--primary-color);
     margin-top: 0;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 /* Aksesoris */
@@ -191,14 +192,14 @@ main {
 }
 
 #aksesoris li {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     transition: all 0.3s ease;
-    padding-left: 2rem;
+    padding-left: 1.5rem;
     position: relative;
 }
 
 #aksesoris li:hover {
-    transform: translateX(15px);
+    transform: translateX(10px);
     color: var(--accent-color);
 }
 
@@ -208,16 +209,16 @@ main {
     font-weight: bold;
     position: absolute;
     left: 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 /* Kontak */
 #kontak {
     background: linear-gradient(135deg, rgba(232, 234, 246, 0.97), rgba(197, 202, 233, 0.97));
-    padding: 3rem;
-    border-radius: 20px;
-    margin-top: 5rem;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 /* Footer */
@@ -225,8 +226,8 @@ footer {
     background: linear-gradient(135deg, rgba(26, 35, 126, 0.97), rgba(100, 181, 246, 0.97));
     color: var(--white);
     text-align: center;
-    padding: 2.5rem;
-    margin-top: 5rem;
+    padding: 1.5rem;
+    margin-top: 3rem;
 }
 
 /* Brand logos */
@@ -235,77 +236,81 @@ footer {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 4rem;
-    padding: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
     background-color: rgba(255, 255, 255, 0.97);
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .brand-logos i {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: var(--primary-color);
-    margin: 1.5rem;
+    margin: 1rem;
     transition: all 0.4s ease;
 }
 
 .brand-logos i:hover {
-    transform: scale(1.4) rotate(15deg);
+    transform: scale(1.2) rotate(10deg);
     color: var(--accent-color);
 }
 
-/* Gaya dasar untuk semua perangkat */
-body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-/* Gaya untuk perangkat mobile */
-@media screen and (max-width: 767px) {
-    header, nav, main, footer {
-        padding: 10px;
-    }
-    nav ul {
-        flex-direction: column;
-    }
-    .services {
-        flex-direction: column;
-    }
-    .service {
-        margin-bottom: 20px;
-    }
-}
-
-/* Gaya untuk tablet dan laptop */
+/* Responsive styles */
 @media screen and (min-width: 768px) {
-    header, nav, main, footer {
-        padding: 20px;
+    header {
+        padding: 3rem 0;
     }
-    nav ul {
-        flex-direction: row;
-        justify-content: space-around;
+
+    .logo {
+        max-width: 200px;
     }
-    .services {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+
+    nav ul li a {
+        padding: 0.7rem 1.5rem;
+        font-size: 1rem;
     }
+
+    main {
+        padding: 4rem 2rem;
+        max-width: 90%;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .hero-content {
+        padding: 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+
     .service {
-        flex-basis: calc(50% - 20px);
+        flex-basis: calc(50% - 1rem);
     }
 }
 
-/* Gaya khusus untuk laptop */
 @media screen and (min-width: 1024px) {
-    .service {
-        flex-basis: calc(25% - 20px);
-    }
     main {
         padding: 6rem 4rem;
+        max-width: 1300px;
     }
+
     .hero {
-        height: 700px;
+        height: 500px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .service {
+        flex-basis: calc(25% - 1.5rem);
+    }
+
+    .brand-logos i {
+        font-size: 3.5rem;
     }
 }
