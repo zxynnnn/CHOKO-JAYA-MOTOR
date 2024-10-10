@@ -6,6 +6,7 @@
     --text-color: #333;
     --white: #fff;
 }
+
 /* Animasi */
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -43,7 +44,7 @@ header {
     color: var(--white);
     text-align: center;
     padding: 1rem;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -66,7 +67,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -97,7 +98,7 @@ nav ul li a:hover {
     color: var(--primary-color);
     background-color: var(--white);
     transform: translateY(-2px);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Konten utama */
@@ -107,7 +108,7 @@ main {
     margin: 0.5rem auto;
     background-color: rgba(255, 255, 255, 0.97);
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Hero section */
@@ -142,7 +143,7 @@ main {
     background-color: rgba(255, 255, 255, 0.97);
     padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     z-index: 2;
     animation: slideIn 1.5s ease-out;
 }
@@ -151,7 +152,7 @@ main {
     color: var(--primary-color);
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* Layanan */
@@ -167,7 +168,7 @@ main {
     background-color: var(--white);
     padding: 1rem;
     margin-bottom: 1rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     transition: all 0.4s ease;
 }
@@ -217,7 +218,7 @@ main {
     padding: 1.5rem;
     border-radius: 8px;
     margin-top: 2rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
@@ -239,18 +240,37 @@ footer {
     padding: 0.8rem;
     background-color: rgba(255, 255, 255, 0.97);
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.brand-logos i {
-    font-size: 2rem;
+.brand-logos .brand-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.brand-logos .brand-icon {
+    font-size: 2.5rem;
     color: var(--primary-color);
-    margin: 0.8rem;
+    margin-bottom: 0.5rem;
     transition: all 0.4s ease;
 }
 
-.brand-logos i:hover {
+.brand-logos .brand-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.brand-logos .brand-item:hover .brand-icon {
     transform: scale(1.1) rotate(5deg);
+    color: var(--accent-color);
+}
+
+.brand-logos .brand-item:hover .brand-name {
     color: var(--accent-color);
 }
 
@@ -298,6 +318,10 @@ footer {
     .service {
         flex-basis: calc(50% - 0.5rem);
     }
+
+    .brand-logos .brand-item {
+        flex-basis: calc(20% - 1rem);
+    }
 }
 
 @media screen and (min-width: 920px) {
@@ -330,6 +354,14 @@ footer {
     .service {
         flex-basis: calc(33.33% - 1rem);
     }
+
+    .brand-logos .brand-icon {
+        font-size: 3rem;
+    }
+
+    .brand-logos .brand-name {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -350,7 +382,11 @@ footer {
         flex-basis: calc(25% - 1rem);
     }
 
-    .brand-logos i {
-        font-size: 3rem;
+    .brand-logos .brand-icon {
+        font-size: 3.5rem;
+    }
+
+    .brand-logos .brand-name {
+        font-size: 1.1rem;
     }
 }
