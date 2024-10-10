@@ -1,7 +1,7 @@
 :root {
     --primary-color: #1a237e;
     --secondary-color: #3f51b5;
-    --accent-color: #4caf50;
+    --accent-color: #64b5f6;
     --background-color: #e8eaf6;
     --text-color: #333;
     --white: #fff;
@@ -26,7 +26,7 @@
 /* Gaya umum */
 body {
     font-family: 'Poppins', sans-serif;
-    line-height: 1.8;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     background-image: linear-gradient(135deg, rgba(26, 35, 126, 0.8), rgba(100, 181, 246, 0.8)), url('https://source.unsplash.com/random/1920x1080?motorcycle,workshop');
@@ -39,18 +39,18 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, rgba(26, 35, 126, 0.95), rgba(100, 181, 246, 0.95));
+    background: linear-gradient(135deg, rgba(26, 35, 126, 0.95), rgba(63, 81, 181, 0.95));
     color: var(--white);
     text-align: center;
-    padding: 2rem 1rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
 .logo {
-    max-width: 150px;
-    margin-bottom: 1rem;
+    max-width: 100px;
+    margin-bottom: 0.5rem;
     border-radius: 50%;
-    border: 3px solid var(--white);
+    border: 2px solid var(--white);
     transition: transform 0.3s ease;
     animation: pulse 2s infinite;
 }
@@ -61,12 +61,12 @@ header {
 
 /* Navigasi */
 nav {
-    background-color: rgba(40, 53, 147, 0.95);
-    padding: 0.8rem 0;
+    background-color: rgba(63, 81, 181, 0.95);
+    padding: 0.5rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 nav ul {
@@ -79,7 +79,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0.5rem;
+    margin: 0.25rem;
 }
 
 nav ul li a {
@@ -87,27 +87,27 @@ nav ul li a {
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
     display: block;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 nav ul li a:hover {
     color: var(--primary-color);
     background-color: var(--white);
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 /* Konten utama */
 main {
-    padding: 2rem 1rem;
+    padding: 1rem;
     max-width: 100%;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
     background-color: rgba(255, 255, 255, 0.97);
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
 /* Hero section */
@@ -115,16 +115,16 @@ main {
     background-image: url('2018-09-09.jpg');
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--white);
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .hero::before {
@@ -140,17 +140,17 @@ main {
 
 .hero-content {
     background-color: rgba(255, 255, 255, 0.97);
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
     z-index: 2;
     animation: slideIn 1.5s ease-out;
 }
 
 .hero-content h2 {
     color: var(--primary-color);
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
@@ -159,28 +159,28 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .service {
     flex-basis: 100%;
     background-color: var(--white);
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
     transition: all 0.4s ease;
 }
 
 .service:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(26, 35, 126, 0.4);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(26, 35, 126, 0.3);
 }
 
 .service h3 {
     color: var(--primary-color);
     margin-top: 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 /* Aksesoris */
@@ -191,14 +191,14 @@ main {
 }
 
 #aksesoris li {
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     transition: all 0.3s ease;
-    padding-left: 1.5rem;
+    padding-left: 1.2rem;
     position: relative;
 }
 
 #aksesoris li:hover {
-    transform: translateX(10px);
+    transform: translateX(5px);
     color: var(--accent-color);
 }
 
@@ -208,25 +208,25 @@ main {
     font-weight: bold;
     position: absolute;
     left: 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 /* Kontak */
 #kontak {
     background: linear-gradient(135deg, rgba(232, 234, 246, 0.97), rgba(197, 202, 233, 0.97));
-    padding: 2rem;
-    border-radius: 10px;
-    margin-top: 3rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 /* Footer */
 footer {
-    background: linear-gradient(135deg, rgba(26, 35, 126, 0.97), rgba(100, 181, 246, 0.97));
+    background: linear-gradient(135deg, rgba(26, 35, 126, 0.97), rgba(63, 81, 181, 0.97));
     color: var(--white);
     text-align: center;
-    padding: 1.5rem;
-    margin-top: 3rem;
+    padding: 1rem;
+    margin-top: 2rem;
 }
 
 /* Brand logos */
@@ -235,51 +235,111 @@ footer {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 2rem;
-    padding: 1rem;
+    margin-top: 1.5rem;
+    padding: 0.8rem;
     background-color: rgba(255, 255, 255, 0.97);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .brand-logos i {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--primary-color);
-    margin: 1rem;
+    margin: 0.8rem;
     transition: all 0.4s ease;
 }
 
 .brand-logos i:hover {
-    transform: scale(1.2) rotate(10deg);
+    transform: scale(1.1) rotate(5deg);
     color: var(--accent-color);
 }
 
 /* Responsive styles */
-@media screen and (min-width: 920px) {
+@media screen and (max-width: 599px) {
+    .hero {
+        background-image: url('2018-09-09.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 600px) {
     header {
-        padding: 3rem 0;
+        padding: 1.5rem 0;
     }
 
     .logo {
-        max-width: 200px;
+        max-width: 120px;
     }
 
     nav ul li a {
-        padding: 0.7rem 1.5rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 2rem;
+        max-width: 95%;
+    }
+
+    .hero {
+        height: 250px;
+    }
+
+    .hero-content {
+        padding: 1.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .service {
+        flex-basis: calc(50% - 0.5rem);
+    }
+}
+
+@media screen and (min-width: 920px) {
+    header {
+        padding: 2rem 0;
+    }
+
+    .logo {
+        max-width: 150px;
+    }
+
+    nav ul li a {
+        padding: 0.6rem 1.2rem;
         font-size: 1rem;
     }
 
     main {
-        padding: 4rem 2rem;
+        padding: 3rem;
         max-width: 90%;
     }
 
     .hero {
-        height: 400px;
+        height: 300px;
     }
 
-    .hero-content {
-        padding: 2rem;
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .service {
+        flex-basis: calc(33.33% - 1rem);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        padding: 4rem;
+        max-width: 1200px;
+    }
+
+    .hero {
+        height: 400px;
     }
 
     .hero-content h2 {
@@ -287,29 +347,10 @@ footer {
     }
 
     .service {
-        flex-basis: calc(50% - 1rem);
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    main {
-        padding: 6rem 4rem;
-        max-width: 1300px;
-    }
-
-    .hero {
-        height: 500px;
-    }
-
-    .hero-content h2 {
-        font-size: 2.5rem;
-    }
-
-    .service {
-        flex-basis: calc(25% - 1.5rem);
+        flex-basis: calc(25% - 1rem);
     }
 
     .brand-logos i {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 }
